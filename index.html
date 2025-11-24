@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Akbar Fajar Riyadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card:#0b1220;
+      --accent:#7c5cff;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #061326 0%, #071024 60%);
+      color:#e6eef8;
+      padding:40px;
+      -webkit-font-smoothing:antialiased;
+      background: url('2825704.gif')repeat center center fixed;
+      background-size: cover;
+      animation: moveBg 30s linear infinite (repeat center fixed);
+
+    }
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:24px;
+    }
+    .card {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.041);
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    /* kolom kiri */
+    .profile{display:flex;flex-direction:column;gap:18px}
+        .avatar {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .avatar img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+    .avatar:hover{
+              transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+  .profile{display:flex;flex-direction:column;gap:18px}
+    .avatar{
+      width:100%; height:220px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#4bd7ff);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#021024;
+      overflow:hidden;
+    }
+    .name{font-size:18px;font-weight:800;letter-spacing:0.6px}
+    .role{color:var(--muted);font-weight:600;margin-top:4px}
+    .contact{margin-top:8px;display:flex;flex-direction:column;gap:8px}
+    .contact a{color:#dbeafe;text-decoration:none;font-weight:600}
+    .section-title{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-weight:600;font-size:13px;color:#dbeafe}
+    
+    
+    /* kolom kanan */
+    .main h2{margin:0 0 8px 0}
+    .about p{margin:0;color:#cbd5e1;line-height:1.5}
+    .list{margin:0;padding:0;list-style:none}
+    .job{margin-bottom:14px}
+    .job h3{margin:0;font-size:15px}
+    .job .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:8px}
+    .portfolio a{color:var(--accent);text-decoration:none;font-weight:700}
+    /* responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns:1fr;}
+      .avatar{height:160px}
+    }
+    /* print-friendly */
+    @media print{
+      body{background:white;color:black;padding:0}
+      .container{box-shadow:none;max-width:100%;grid-template-columns:1fr}
+      .card{background:transparent;border:none;padding:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="card profile">
+      <div class="avatar"><img src="download.jfif" alt="foto profil"></div>
+      <div>
+        <div class="name">AKBAR FAJAR RIYADI</div>
+        <div class="role">Siswa — SMK N 3 KENDAL (Pengembangan Perangkat Lunak)</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Kontak</div>
+        <div class="contact">
+          <div>📞 <a href="tel:+6282135825710">0882-339-22500</a></div>
+          <div>✉️ <a href="mailto:akbarfajarriyadi@gmail.com">akbarfajarriyadi@gmail.com</a></div>
+          <div>📍 Kaligetas, Kecamatan Mijen, Kota Semarang, Jawa Tengah</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Keahlian</div>
+        <div class="skills">
+          <span class="chip">PHP (Dasar)</span>
+          <span class="chip">HTML dan CSS (Dasar)</span>
+          <span class="chip">Database (Dasar)</span>
+          <span class="chip">Desain UI</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Portofolio</div>
+        <div class="portfolio"><a href="http://bit.ly/3ULELUj" target="_blank">bit.ly/3ULELUj</a></div>
+      </div>
+
+    </aside>
+
+    
+    <main class="card main">
+      <section class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak. 
+          Selama belajar, saya telah mempelajari pembuatan dan pengelolaan aplikasi berbasis web, 
+          pengembangan database, dan dasar-dasar pemrograman seperti HTML, CSS, PHP, dan Java. 
+          Saya juga memahami konsep desain antarmuka pengguna
+          Saat ini saya terus mengembangkan keterampilan teknis dan 
+          pemecahan masalah untuk siap berkontribusi di dunia kerja bidang teknologi informasi.</p>
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Pengalaman & Proyek RPL</h2>
+        <div class="job">
+          <div class="meta">Pengembangan Website Sederhana — (Proyek Sekolah)</div>
+          <div>• Pembuatan website menggunakan HTML dan CSS. Membuat struktur halaman, styling responsif, dan menambahkan elemen interaktif dasar.</div>
+        </div>
+
+        <div class="job">
+          <div class="meta">Sistem Manajemen Data Perpustakaan — (PHP & MySQL)</div>
+          <div>• Membuat aplikasi CRUD untuk mengelola data perpustakaan. Menghubungkan antarmuka web dengan database dan mengimplementasikan validasi input.</div>
+        </div>
+
+        <div class="job">
+          <div class="meta">Aplikasi Kasir Sederhana — (PHP, HTML & MySQL)</div>
+          <div>• Membuat aplikasi kasir berbasis Java dengan fitur input barang, perhitungan total harga, dan cetak struk sederhana.</div>
+        </div>
+      </section>
+
+
+      <section style="margin-top:18px">
+        <h2>Pendidikan</h2>
+        <div class="job">
+          <div class="meta">MI Miftahul Huda (2015 - 2021)</div>
+          <div>• Menyelesaikan pendidikan dasar dan aktif kegiatan ekstrakurikuler.</div>
+          <div class="meta">SMP N 22 Semarang (2021 - 2024)</div>
+          <div>• Menyelesaikan pendidikan tingkat menengah pertama dengan fokus pada pelajaran umum.</div>
+          <div class="meta">SMK N 3 KENDAL — Jurusan Pengembangan Pengembangan Perangkat Lunak (2024 - 2027)</div>
+          <div>• Pembelajaran dasar pengembangan perangkat lunak, pengelolaan database, dan pemrograman sql.</div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Keahlian Teknis</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px">
+          <div class="project">HTML & CSS — Desain dan layout halaman web</div>
+          <div class="project">PHP & MySQL — Pengembangan aplikasi berbasis data</div>
+          <div class="project">Java — Pembuatan aplikasi desktop sederhana</div>
+          <div class="project">Desain UI — Layout dan elemen antarmuka</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
